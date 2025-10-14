@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- =============================
+  🪙 Meme Coin Template - One Page Version
+  Replace text, logos, and token details below.
+  ============================== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$MEMECOIN - The Funniest Coin on the Blockchain</title>
+  <style>
+    /* ====== BASIC RESET ====== */
+    * {margin:0;padding:0;box-sizing:border-box;}
+    body {
+      font-family: 'Poppins', sans-serif;
+      color:#fff;
+      background: linear-gradient(135deg, #0a0a0a, #1c1f26);
+      scroll-behavior:smooth;
+    }
+    a {text-decoration:none;color:#fff;}
+    img {max-width:100%;}
+    h1,h2,h3 {font-weight:700;}
+    section {padding:80px 20px; text-align:center;}
+
+    /* ====== NAVBAR ====== */
+    header {
+      position:fixed;top:0;left:0;width:100%;
+      background:rgba(20,20,30,0.85);
+      display:flex;justify-content:space-between;align-items:center;
+      padding:15px 40px;z-index:1000;backdrop-filter:blur(10px);
+    }
+    header .logo {font-size:1.5em;font-weight:700;display:flex;align-items:center;gap:10px;}
+    header nav a {
+      margin:0 10px;padding:8px 12px;border-radius:8px;
+      transition:0.3s;
+    }
+    header nav a:hover {background:#ff0077;}
+    .buy-btn {
+      background:#ff0077;padding:10px 18px;border-radius:20px;
+      transition:0.3s;
+    }
+    .buy-btn:hover {background:#ff3399;}
+
+    /* ====== HERO ====== */
+    .hero {
+      min-height:100vh;display:flex;flex-direction:column;
+      justify-content:center;align-items:center;
+      background: radial-gradient(circle at top, #1b1b2f, #121212);
+      position:relative;overflow:hidden;
+    }
+    .hero h1 {font-size:3em;margin-bottom:15px;}
+    .hero p {font-size:1.2em;color:#ccc;max-width:500px;}
+    .hero .cta {
+      margin-top:30px;display:flex;flex-wrap:wrap;gap:15px;justify-content:center;
+    }
+    .hero .cta a {
+      background:#ff0077;padding:12px 25px;border-radius:25px;transition:0.3s;
+    }
+    .hero .cta a:hover {transform:scale(1.05);background:#ff3399;}
+    .floating-icons {
+      position:fixed;right:20px;bottom:20px;display:flex;flex-direction:column;gap:10px;
+    }
+    .floating-icons a {
+      background:#202030;padding:10px;border-radius:50%;font-size:1.3em;
+      transition:0.3s;
+    }
+    .floating-icons a:hover {background:#ff0077;}
+
+    /* ====== SECTIONS ====== */
+    .section-title {font-size:2em;margin-bottom:20px;color:#ff0077;}
+    .about p {max-width:600px;margin:auto;color:#ddd;line-height:1.6;}
+
+    /* ====== TEAM ====== */
+    .team {display:flex;flex-wrap:wrap;justify-content:center;gap:20px;margin-top:40px;}
+    .member {
+      background:#1e1e2e;padding:20px;border-radius:15px;width:200px;
+      transition:0.3s;
+    }
+    .member:hover {transform:translateY(-5px);}
+    .member img {border-radius:50%;width:100px;height:100px;object-fit:cover;margin-bottom:10px;}
+
+    /* ====== TOKENOMICS ====== */
+    .token-data {max-width:700px;margin:auto;text-align:left;}
+    .bar {background:#333;border-radius:10px;overflow:hidden;margin:10px 0;}
+    .bar div {height:20px;background:#ff0077;}
+    .chart {margin-top:30px;}
+
+    /* ====== ROADMAP ====== */
+    .roadmap-steps {max-width:800px;margin:auto;text-align:left;}
+    .phase {
+      margin:20px 0;padding:20px;background:#1a1a25;border-radius:15px;
+      border-left:4px solid #ff0077;
+    }
+    .phase h3 {color:#ff0077;margin-bottom:8px;}
+
+    /* ====== CONTACT ====== */
+    form {max-width:500px;margin:auto;text-align:left;}
+    form input,form textarea {
+      width:100%;padding:10px;margin-bottom:10px;
+      background:#1f1f2f;border:none;border-radius:8px;color:#fff;
+    }
+    form button {
+      background:#ff0077;border:none;padding:12px 25px;border-radius:25px;
+      color:#fff;cursor:pointer;transition:0.3s;
+    }
+    form button:hover {background:#ff3399;}
+
+    /* ====== FOOTER ====== */
+    footer {
+      padding:20px;text-align:center;background:#0e0e15;color:#aaa;
+      font-size:0.9em;
+    }
+
+    /* ====== EXTRAS ====== */
+    #backToTop {
+      position:fixed;bottom:80px;right:25px;
+      background:#ff0077;color:#fff;border:none;padding:12px 15px;
+      border-radius:50%;cursor:pointer;display:none;
+    }
+    #backToTop:hover {background:#ff3399;}
+
+    /* ====== RESPONSIVE ====== */
+    @media(max-width:768px){
+      header {flex-direction:column;}
+      .team {flex-direction:column;align-items:center;}
+      .hero h1 {font-size:2.3em;}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="logo">🐸 $MEMECOIN</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#tokenomics">Tokenomics</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#" class="buy-btn">Buy Now 🚀</a>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero">
+    <h1>$MEMECOIN</h1>
+    <p>The funniest coin on the blockchain — born from memes, powered by the community 💎🔥</p>
+    <div class="cta">
+      <a href="#">Buy on DEX</a>
+      <a href="#">Join Telegram</a>
+      <a href="#">View Chart</a>
+    </div>
+  </section>
+
+  <!-- Floating Social Icons -->
+  <div class="floating-icons">
+    <a href="#">🐦</a>
+    <a href="#">💬</a>
+    <a href="#">🎮</a>
+    <a href="#">📈</a>
+  </div>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="about">
+    <h2 class="section-title">About $MEMECOIN</h2>
+    <p>Born from the depths of internet humor, $MEMECOIN represents the unstoppable power of memes to unite and empower communities. Together, we ride to the moon 🌕🚀.</p>
+
+    <div class="team">
+      <div class="member">
+        <img src="https://via.placeholder.com/100" alt="Team Member">
+        <h3>Chief Meme Officer</h3>
+        <p>Leads the chaos.</p>
+      </div>
+      <div class="member">
+        <img src="https://via.placeholder.com/100" alt="Team Member">
+        <h3>Marketing Frog</h3>
+        <p>Spreads the fun.</p>
+      </div>
+      <div class="member">
+        <img src="https://via.placeholder.com/100" alt="Team Member">
+        <h3>Dev Ape</h3>
+        <p>Codes the moon mission.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TOKENOMICS ===== -->
+  <section id="tokenomics" class="tokenomics">
+    <h2 class="section-title">Tokenomics 💰</h2>
+    <div class="token-data">
+      <p><strong>Token Name:</strong> $MEMECOIN</p>
+      <p><strong>Total Supply:</strong> 1,000,000,000</p>
+      <p><strong>Network:</strong> Binance Smart Chain</p>
+
+      <div class="chart">
+        <p>Presale</p><div class="bar"><div style="width:30%;"></div></div>
+        <p>Liquidity</p><div class="bar"><div style="width:25%;"></div></div>
+        <p>Marketing</p><div class="bar"><div style="width:20%;"></div></div>
+        <p>Burn</p><div class="bar"><div style="width:15%;"></div></div>
+        <p>Community</p><div class="bar"><div style="width:10%;"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ROADMAP ===== -->
+  <section id="roadmap" class="roadmap">
+    <h2 class="section-title">Roadmap 🗺️</h2>
+    <div class="roadmap-steps">
+      <div class="phase">
+        <h3>Phase 1 - Launch</h3>
+        <p>Website, Whitepaper, and Token Launch</p>
+      </div>
+      <div class="phase">
+        <h3>Phase 2 - Growth</h3>
+        <p>Marketing Push, Community Expansion</p>
+      </div>
+      <div class="phase">
+        <h3>Phase 3 - Exchange Listings</h3>
+        <p>CMC + CG, CEX Listings</p>
+      </div>
+      <div class="phase">
+        <h3>Phase 4 - Ecosystem</h3>
+        <p>MemeFi, NFTs, Game Partnerships</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="contact">
+    <h2 class="section-title">Contact Us 📞</h2>
+    <form>
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 $MEMECOIN. All rights reserved. 🚀 | Not financial advice.</p>
+  </footer>
+
+  <button id="backToTop">⬆</button>
+
+  <script>
+    // Back to Top Button
+    const topBtn = document.getElementById('backToTop');
+    window.onscroll = function() {
+      if(document.documentElement.scrollTop > 200){topBtn.style.display='block';}
+      else {topBtn.style.display='none';}
+    }
+    topBtn.onclick = ()=>{window.scrollTo({top:0,behavior:'smooth'});}
+  </script>
+</body>
+</html>
